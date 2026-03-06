@@ -141,6 +141,7 @@ def fetch_data_from_db():
     """
     Fetch all events ordered by date.
     """
+    create_db_table()
     conn = get_db_connection()
     cursor = conn.cursor(pymysql.cursors.DictCursor)
 
